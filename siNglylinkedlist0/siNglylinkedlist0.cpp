@@ -69,4 +69,16 @@ void List::addNode() /* Menambah  sebuah Node kedalam list */
 		current = current->next;
 
 	}
-	
+	/* Jika loop diatas dieksekusi, previous dan current akan menempati posisi dimana */
+		nodeBaru->next = current;
+	previous->next = nodeBaru;
+}
+
+bool List::listempty()
+{
+	if (START == NULL)
+		return true;
+	else
+		return false;
+}
+
