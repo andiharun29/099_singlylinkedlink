@@ -21,3 +21,8 @@ public:
 	void traverse();
 };
 
+List::List()
+{
+	START = NULL;
+}
+
