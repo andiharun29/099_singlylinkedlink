@@ -161,4 +161,14 @@ int main()
 			else
 				cout << endl << "Data dengan nomor mahasiswa " << nim << "berhasil dihapus";
 
-		
+		}
+		break;
+		case '3':
+
+			mhs.traverse();
+			{
+				if (mhs.listempty() == true)
+				{
+					cout << "\nList Kosong\n";
+					break;
+				
